@@ -1,5 +1,6 @@
 var express = require('express')
 var app = express();
+var fs = require('fs');
 var buffer = fs.readFileSync('index.html');
 
 app.set('port', (process.env.PORT || 5000))
